@@ -1,0 +1,37 @@
+html {
+    height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background: linear-gradient(to top, #fafafa, #808080);
+	font-family:verdana,helvetica,arial,sans-serif;
+	font-size:12px;
+}
+.profiler {
+	display:block;
+	width:250px;
+	color:#292929;
+	background-color:#a8a8a8;
+	position: absolute;
+	bottom: 0;
+	right: 100px;
+	border-top-left-radius:1em;
+	border-top-right-radius:1em;	
+}
+.profiler > span {
+	display:block;
+	width:250px;
+	color:#ffffff;
+	background: linear-gradient(to top, #292929, #2b2b2b, #111111);
+	font-weight: bold;
+	text-align: center;
+	line-height:230%;
+	border-top-left-radius:1em;
+	border-top-right-radius:1em;		
+}
+.profiler > table {
+	width: 100%;
+}
