@@ -19,6 +19,7 @@
 					- {{ HTML::link("page/about", "About") }}<br /><br />
 					<b>Examples:</b><br />
 					- {{ HTML::link("page/postget", "POST & GET") }}<br />
+					- {{ HTML::link("page/random", "Random") }}<br />
 				</td>
 				<td valign="top">
 					@yield('content')
