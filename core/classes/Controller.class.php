@@ -13,7 +13,7 @@ class Controller {
 			$this->__controller_action = $_GET['action'];
 			return $this->{$_GET['action']}((object)$_GET,(object)$_POST);
 		}
-		if (method_exists($this, "index")) return $this->index();
+		if (method_exists($this, "index")) return $this->index((object)$_GET,(object)$_POST);
 	}
 	
 	function getActionLink() {

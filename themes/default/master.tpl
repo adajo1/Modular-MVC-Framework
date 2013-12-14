@@ -15,8 +15,10 @@
 			</tr>
 			<tr>
 				<td valign="top">
-					{{ HTML::link("page/home", "Home") }}<br />
-					{{ HTML::link("page/about", "About") }}
+					- {{ HTML::link("page/home", "Home") }}<br />
+					- {{ HTML::link("page/about", "About") }}<br /><br />
+					<b>Examples:</b><br />
+					- {{ HTML::link("page/postget", "POST & GET") }}<br />
 				</td>
 				<td valign="top">
 					@yield('content')

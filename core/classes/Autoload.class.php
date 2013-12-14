@@ -22,7 +22,6 @@ class Autoload {
 		}
 		foreach (glob(MODULES_DIR . '*/lib/' . $class . '.class.php') as $mod) {
 			$module = preg_replace('/(.*)modules\/(.*)\/lib\/(.*)/', '$2', $mod);
-			if (!Modules::is_active($module)) continue;		
 			include_once $mod;
 			if (method_exists($class, 'init')) $class::init();
 			return TRUE;
